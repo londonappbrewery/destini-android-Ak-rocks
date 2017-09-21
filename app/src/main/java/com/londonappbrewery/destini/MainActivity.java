@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         firstReplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext()," 1 ", Toast.LENGTH_SHORT).show();
                 if(currentStoryState == 1) {
                     updateStory(R.string.T3_Story, R.string.T3_Ans1, R.string.T3_Ans2);
                     currentStoryState = 3;
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         secondReplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext()," 2 ", Toast.LENGTH_SHORT).show();
                 if(currentStoryState == 1) {
                     updateStory(R.string.T2_Story, R.string.T2_Ans1, R.string.T2_Ans2);
                     currentStoryState = 2;
